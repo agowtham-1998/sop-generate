@@ -34,6 +34,10 @@ function SOPForm() {
     writingScoreOptional: true,
   });
 
+  const prodUrl = "https://sop-generator-be646487802e.herokuapp.com/";
+
+  const localUrl = 'http://localhost:3001/generate-sop';
+
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
@@ -48,7 +52,7 @@ function SOPForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post('http://localhost:3001/generate-sop', formData);
+      const response = await axios.post(`${prodUrl}`, formData);
 
       if (response.status === 200) {
         console.log('SOP generated and email sent.', response);
