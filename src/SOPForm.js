@@ -36,7 +36,7 @@ function SOPForm() {
 
   const prodUrl = "https://sop-generator-be646487802e.herokuapp.com/";
 
-  const localUrl = 'http://localhost:3001/generate-sop';
+  // const localUrl = 'http://localhost:3001/generate-sop';
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
