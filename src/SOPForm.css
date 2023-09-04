@@ -1,0 +1,43 @@
+/* Style the container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+  }
+  
+  /* Style the form */
+  .sop-form {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    width: 50%;
+    max-width: 600px; 
+}
+  
+  /* Style form fields */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  /* Style buttons */
+  .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  .optional-label {
+    margin-left: 4px; 
+    color: #595858;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+    /* Adjust form width for smaller screens */
+    .sop-form {
+      max-width: 100%;
+    }
+  }
