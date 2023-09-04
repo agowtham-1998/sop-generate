@@ -52,7 +52,7 @@ function SOPForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post('https://sop-generator-be646487802e.herokuapp.com/', formData);
+      const response = await axios.post('https://sop-generator-be646487802e.herokuapp.com/generate-sop', formData);
 
       if (response.status === 200) {
         console.log('SOP generated and email sent.', response);
