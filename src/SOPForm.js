@@ -34,7 +34,7 @@ function SOPForm() {
     writingScoreOptional: true,
   });
 
-  const prodUrl = "https://sop-generator-be646487802e.herokuapp.com/";
+  // const prodUrl = "https://sop-generator-be646487802e.herokuapp.com/";
 
   // const localUrl = 'http://localhost:3001/generate-sop';
 
@@ -52,7 +52,7 @@ function SOPForm() {
     setIsSubmitting(true);
 
     try {
-      const response = await axios.post(`${prodUrl}`, formData);
+      const response = await axios.post('https://sop-generator-be646487802e.herokuapp.com/', formData);
 
       if (response.status === 200) {
         console.log('SOP generated and email sent.', response);
